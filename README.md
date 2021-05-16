@@ -1,5 +1,12 @@
 # Release Retention Coding Exercise
 
+## Start
+
+- yarn install
+- yarn start
+
+Look at the results in a terminal
+
 ## Welcome to DevOps Deploy
 
 Welcome to DevOps Deploy: the popular tool that software teams use to deploy their applications.
