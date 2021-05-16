@@ -3,7 +3,7 @@ import ReleaseRetention from './ReleaseRetention';
 console.log(`.\n.\n.\n`);
 
 const ReleaseRetentionOverviewPage = new ReleaseRetention({
-  amountOfReleases: 5,
+  amountOfReleases: 2,
 });
 
 // Example of workflow
