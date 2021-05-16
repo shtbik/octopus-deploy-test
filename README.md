@@ -5,7 +5,7 @@
 - yarn install
 - yarn start
 
-Look at the results in a terminal
+Look at the results in your terminal
 
 ## Welcome to DevOps Deploy
 

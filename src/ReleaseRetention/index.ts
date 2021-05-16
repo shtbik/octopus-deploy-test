@@ -80,17 +80,17 @@ class ReleaseRetention {
       this.descSortByDeployedAt
     );
 
-    this.projects.forEach((project) => {
-      const { Id: projectId, Name: projectName } = project;
+    this.environments.forEach((environment) => {
+      const { Id: envId, Name: envName } = environment;
 
-      this.environments.forEach((environment) => {
-        const { Id: envId, Name: envName } = environment;
+      // Hint! Add projectId to Deploy model to decrease the complexity of find operation
+      const deploymentsByEnv = this.filterDeploymentsByEnv(
+        sortedDeploymentsByDeployedAt,
+        envId
+      );
 
-        // Hint! Add projectId to Deploy model for decrease complexity
-        const deploymentsByEnv = this.filterDeploymentsByEnv(
-          sortedDeploymentsByDeployedAt,
-          envId
-        );
+      this.projects.forEach((project) => {
+        const { Id: projectId, Name: projectName } = project;
 
         const filtredReleases = [];
 
