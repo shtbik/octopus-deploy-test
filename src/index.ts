@@ -28,6 +28,7 @@ const ReleaseRetentionOverviewPage = new ReleaseRetention({
   console.log('Start timer: 6 sec');
   await new Promise((resolve) => setTimeout(() => resolve(''), 6000));
   console.log(ReleaseRetentionOverviewPage.retainedReleases);
+  console.log('----------');
   await ReleaseRetentionOverviewPage.refresh();
   console.log(ReleaseRetentionOverviewPage.retainedReleases);
   console.log('----------');
